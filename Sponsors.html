@@ -1,0 +1,127 @@
+<!doctype html>
+<html lang="en-US">
+<head>
+<meta charset="UTF-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="icon" href="favicon.png" type="image/png" sizes="64x64">
+<title>Sab-BOT-age</title>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.2/jquery.min.js"></script>
+<script src="https://cdn.jsdelivr.net/jquery.stellar/0.6.2/jquery.stellar.min.js"></script>
+<!--
+<script src="//cdnjs.cloudflare.com/ajax/libs/gsap/1.14.2/TweenMax.min.js"></script>
+<script src="//cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.5/ScrollMagic.min.js"></script>
+-->
+<script>
+		$(function(){
+			$.stellar({
+				horizontalScrolling: false,
+				verticalOffset: 40
+			});
+		});
+</script>
+<link href="css/Style.css" rel="stylesheet" type="text/css">
+</head>
+<body>
+<!-- Main Container -->
+<div class="container"> 
+  <!-- Navigation -->
+    <section class="parallax" id="home_parallax1" data-stellar-background-ratio=".5" height="40%">
+        <script>
+            $(document).ready(function() {
+
+                $(window).scroll(function () {
+      console.log($(window).scrollTop())
+    if ($(window).scrollTop() > 0) {
+      $('#nav_bar').addClass('navbar-fixed');
+        $('list_border').addClass('nav-spacer');
+    }
+    if ($(window).scrollTop() < 1) {
+      $('#nav_bar').removeClass('navbar-fixed');
+        
+    }
+  });
+});</script>
+    <header id="nav_bar">
+        <a href="" >
+            <img class="logo" src="images/logo.png" height="50">
+          <h1 class="title">SAB-BOT-AGE</h1>
+      </a>
+      <nav>
+          <ul>
+              <li><img src="images/Nav_spacer.png" height="50" width="2"></li>
+              <li class="dropdown"><a class="dropbtn" href="index.html">HOME</a></li>
+              <li><img src="images/Nav_spacer.png" height="50" width="2"></li>
+              <li class="dropdown"><a class="dropbtn">FRC 1640</a>
+                <div class="dropdown-content">
+                    <a id="ddl" href="">DEWBOT</a>
+                    <a id="ddl" href="">Swerve</a>
+                    <a id="ddl" href="">Team</a>
+                    <a id="ddl" href="">Photos</a>
+                </div>
+              </li>
+              <li><img src="images/Nav_spacer.png" height="50" width="2"></li>
+              <li class="dropdown"><a class="dropbtn">FTC 7314</a>
+                <div class="dropdown-content">
+                    <a id="ddl" href="">DEWBOT</a>
+                    <a id="ddl" href="">Team</a>
+                    <a id="ddl" href="">Photos</a>
+                </div>
+              </li>
+              <li><img src="images/Nav_spacer.png" height="50" width="2"></li>
+              <li class="dropdown"><a class="dropbtn">PHOTOS</a>
+                <div class="dropdown-content">
+                    <a id="ddl" href="">FRC</a>
+                    <a id="ddl" href="">FTC</a>
+                    <a id="ddl" href="Gallery.html">All</a>
+                </div>
+              </li>
+              <li><img src="images/Nav_spacer.png" height="50" width="2">
+              </li>
+              <li class="dropdown"><a class="dropbtn" href="Sponsors.html">Sponsors</a></li>
+              <li><img src="images/Nav_spacer.png" height="50" width="2">
+              </li>
+          </ul>
+      </nav>
+    </header>
+        <h1 class="overlay_text" style="letter-spacing: 1px;" id="page_title">Sponsors</h1>
+    </section>
+
+
+
+  <!-- About Section -->
+  <section class="section" id="about">
+    <h1 class="title_text">Proud Sponsors of DAR</h1><hr>
+      <article class="sponsors-page">
+        <img src="images/sponsors/Boeing.svg" alt="Boeing" id="sponsor-cards"/>
+        <img src="images/sponsors/Sikorsky.png" alt="Sikorsky" id="sponsor-cards"/>
+        <img src="images/sponsors/Comcast.png" alt="Comcast" id="sponsor-cards"/>
+        <img src="images/sponsors/CCIU.jpg" alt="Chester County Intermediate Unit" id="sponsor-cards"/>
+        <img src="images/sponsors/Arkema.jpg" alt="Arkema" id="sponsor-cards"/>
+        <img src="images/sponsors/Herr's.jpg" alt="Herr's Foods" id="sponsor-cards"/>
+        <img src="images/sponsors/ASME.jpg" alt="American Society of Mechanical Engineers" id="sponsor-cards"/>
+        <br><strong>Ira Binder - Attorney at Law</strong><br><strong>The Featherman Family</strong>
+        <hr>
+        <h1>In Kind Donations</h1>
+        <hr>
+        <img src="images/sponsors/CMD.jpg" alt="Custom Machine and Design" id="sponsor-cards"/>
+        <img src="images/sponsors/SolidWorks.png" alt="Solidworks" id="sponsor-cards"/>
+    </article>
+  </section>
+  <!-- Footer Section -->
+<footer>
+	<section class="footer_banner" id="contact">
+    <h2 class="hidden">Footer Banner Section </h2>
+    <p class="bottom_header">FOR THE LATEST NEWS &amp; UPDATES</p>
+    <div class="button">SUBSCRIBE</div>
+	</section>
+  <!-- Copyrights Section -->
+  <div class="credits">&copy;2015 - <strong>Light Theme</strong><br>
+<p>⛄ Website Designed by Trevor B ⛄</p>
+<p>📷 Photographs Courtesy of Clem McKown 📷</p>  
+	  </footer>
+    </div>
+    </div>
+<!-- Main Container Ends -->
+</body>
+</html>
