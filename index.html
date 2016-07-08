@@ -30,6 +30,17 @@
 	});
 </script>
 <link href="css/Style.css" rel="stylesheet" type="text/css">
+<!-- jquery include -->
+		<script> 
+    	$(function(){
+      		$("#includedHeader").load("header.html"); 
+    	});
+		</script> 
+		<script> 
+    	$(function(){
+      		$("#includedFooter").load("footer.html"); 
+    	});
+		</script> 
 </head>
 <body>
 	
@@ -39,10 +50,9 @@
 	
 <div class="container">
     <section class="parallax" id="home_parallax1" data-stellar-background-ratio=".5" height="40%">
-        
-        
-		<!-- php include -->
-		<?php include 'header.html';?>
+		
+		<!-- jquery include -->
+		<div id="includedHeader"></div>
 		
         <!-- w3 include 
 		<div w3-include-html="header.html"></div>
@@ -123,10 +133,13 @@
          <p class="section_text" align="justify">The FRC 1640 team now encompasses thirty five students from throughout Chester County and more than a dozen mentors. While the organization has expanded its scope to include a FIRST Tech Challenge team and hosts two FIRST LEGO League events annually, FRC 1640 remains solidly the core of Downingtown Area Robotic (DAR).</p>
     </section>
 	
+	<!-- jquery include -->
+	<div id="includedFooter"></div>
 	
+	<!-- w3 include
 	<div w3-include-html="footer.html"></div>
 		<script>w3IncludeHTML();</script>
-	
+	-->
 	
     </div>
 </body>
