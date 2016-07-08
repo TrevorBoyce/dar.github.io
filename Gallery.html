@@ -6,9 +6,11 @@
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <link rel="icon" href="favicon.png" type="image/png" sizes="64x64">
 <title>Sab-BOT-age</title>
+<link href='https://fonts.googleapis.com/css?family=Muli' rel='stylesheet' type='text/css'>
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.2/jquery.min.js"></script>
 <script src="https://cdn.jsdelivr.net/jquery.stellar/0.6.2/jquery.stellar.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/slidesjs/3.0/jquery.slides.min.js"></script>
+<script src="http://www.w3schools.com/lib/w3data.js"></script>
 <!--
 <script src="//cdnjs.cloudflare.com/ajax/libs/gsap/1.14.2/TweenMax.min.js"></script>
 <script src="//cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.5/ScrollMagic.min.js"></script>
@@ -24,11 +26,15 @@
 <link href="css/Style.css" rel="stylesheet" type="text/css">
 </head>
 <body>
-<!-- Main Container -->
+	
+	
 <div class="container"> 
-  <!-- Navigation -->
     <section class="parallax" id="home_parallax1" data-stellar-background-ratio=".5" height="40%">
-        <script>
+        
+		
+		<div w3-include-html="header.html"></div>
+		<script>w3IncludeHTML();</script>
+		<script>
             $(document).ready(function() {
 
                 $(window).scroll(function () {
@@ -43,71 +49,23 @@
     }
   });
 });</script>
-    <header id="nav_bar">
-        <a href="index.html">
-            <img class="logo" src="images/logo.png" height="50">
-          <h1 class="title">SAB-BOT-AGE</h1>
-      </a>
-      <nav>
-          <ul>
-              <li><img src="images/Nav_spacer.png" height="50" width="2"></li>
-              <li class="dropdown"><a class="dropbtn" href="index.html">HOME</a></li>
-              <li><img src="images/Nav_spacer.png" height="50" width="2"></li>
-              <li class="dropdown"><a class="dropbtn">FRC 1640</a>
-                <div class="dropdown-content">
-                    <a id="ddl" href="">DEWBOT</a>
-                    <a id="ddl" href="">Swerve</a>
-                    <a id="ddl" href="">Team</a>
-                    <a id="ddl" href="">Photos</a>
-                </div>
-              </li>
-              <li><img src="images/Nav_spacer.png" height="50" width="2"></li>
-              <li class="dropdown"><a class="dropbtn">FTC 7314</a>
-                <div class="dropdown-content">
-                    <a id="ddl" href="">DEWBOT</a>
-                    <a id="ddl" href="">Team</a>
-                    <a id="ddl" href="">Photos</a>
-                </div>
-              </li>
-              <li><img src="images/Nav_spacer.png" height="50" width="2"></li>
-              <li class="dropdown"><a class="dropbtn">PHOTOS</a>
-                <div class="dropdown-content">
-                    <a id="ddl" href="">FRC</a>
-                    <a id="ddl" href="">FTC</a>
-                    <a id="ddl" href="">All</a>
-                </div>
-              </li>
-              <li><img src="images/Nav_spacer.png" height="50" width="2">
-              </li>
-              <li class="dropdown"><a class="dropbtn" href="Sponsors.html">Sponsors</a></li>
-              <li><img src="images/Nav_spacer.png" height="50" width="2">
-              </li>
-          </ul>
-      </nav>
-    </header>
+		
+		
         <h1 class="overlay_text" style="letter-spacing: 1px;" id="page_title">Photo Gallery</h1>
     </section>
 
 
-
-  <!-- About Section -->
   <section class="section" id="about">
     <h1 class="title_text">Photo Gallery</h1>
     <ul></ul>
   </section>
   </footer>
-  <!-- Footer Section -->
-  <section class="footer_banner" id="contact">
-    <h2 class="hidden">Footer Banner Section </h2>
-    <p class="bottom_header">FOR THE LATEST NEWS &amp; UPDATES</p>
-    <div class="button" target="_blank" onclick="location.href='http://goo.gl/forms/k3e3S2EnLveaXy7x1'">SUBSCRIBE</div>
-  </section>
-  <!-- Copyrights Section -->
-  <div class="credits">
-      <p>⛄ Designed by <strong>Trevor B</strong> ⛄</p>
-      <p>📷 Photographs Courtesy of <strong>Clem McKown</strong> 📷</p>      
+	
+	
+	<div w3-include-html="footer.html"></div>
+	<script>w3IncludeHTML();</script>
+	
+	
     </div>
-    </div>
-<!-- Main Container Ends -->
 </body>
 </html>
