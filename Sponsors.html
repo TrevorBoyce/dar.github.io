@@ -45,6 +45,21 @@
 		
 		<div id="includedHeader"></div>
 		
+		<script>
+            $(document).ready(function() {
+
+                $(window).scroll(function () {
+      console.log($(window).scrollTop())
+    if ($(window).scrollTop() > 0) {
+      $('#nav_bar').addClass('navbar-fixed');
+        $('list_border').addClass('nav-spacer');
+    }
+    if ($(window).scrollTop() < 1) {
+      $('#nav_bar').removeClass('navbar-fixed');
+        
+    }
+  });
+});</script>
 		
         <h1 class="overlay_text" style="letter-spacing: 1px;" id="page_title">Sponsors</h1>
     </section>

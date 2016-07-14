@@ -76,7 +76,7 @@ Remove this before releasing!!! */
 	width: 40%;
     position: absolute;
 	left: 0;
-	margin-top: 30px;
+	margin-top: 25px;
 	margin-left: 80px;
 	letter-spacing: 1px;
 }
@@ -201,7 +201,7 @@ text-shadow:
 }
 /* About Section */
 .title_text {
-	width: auto;
+	width: 100%;
 	text-align: center;
 	font-weight: bold;
 	font-size: 40px;
@@ -226,6 +226,7 @@ text-shadow:
 	display: inline-block;
 	background-color: #FFFFFF;
 	margin-top: 0px;
+	width: auto;
 }
 .section_text {
 	color: #1943B5;
@@ -419,6 +420,13 @@ footer {
 	font-weight: lighter;
 	margin-left: 20px;
 	margin-right: 20px;
+}
+.date {
+	color: darkgrey;
+}
+.eventtext {
+	text-align: justify;
+	font-size: 120%;
 }
 .button {
     text-decoration: none;
