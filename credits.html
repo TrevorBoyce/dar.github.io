@@ -1,0 +1,90 @@
+<!doctype html>
+<html lang="en-US">
+<head>
+<meta charset="UTF-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="icon" href="favicon.png" type="image/png" sizes="64x64">
+<title>Sab-BOT-age</title>
+<link href='https://fonts.googleapis.com/css?family=Muli' rel='stylesheet' type='text/css'>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.2/jquery.min.js"></script>
+<script src="https://cdn.jsdelivr.net/jquery.stellar/0.6.2/jquery.stellar.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/slidesjs/3.0/jquery.slides.min.js"></script>
+<script>
+		$(function(){
+			$.stellar({
+				horizontalScrolling: false,
+				verticalOffset: 40
+			});
+		});
+</script>
+<!-- jquery include -->
+		<script> 
+    	$(function(){
+      		$("#includedHeader").load("header.html"); 
+    	});
+		</script> 
+		<script> 
+    	$(function(){
+      		$("#includedFooter").load("footer.html"); 
+    	});
+		</script> 
+<link href="css/Style.css" rel="stylesheet" type="text/css">
+</head>
+<body>
+	
+	
+<div class="container"> 
+    <section class="parallax" id="credits_parallax" data-stellar-background-ratio=".5" height="40%">
+        
+		
+		<div id="includedHeader"></div>
+		
+		<script>
+            $(document).ready(function() {
+
+                $(window).scroll(function () {
+      console.log($(window).scrollTop())
+    if ($(window).scrollTop() > 0) {
+      $('#nav_bar').addClass('navbar-fixed');
+        $('list_border').addClass('nav-spacer');
+    }
+    if ($(window).scrollTop() < 1) {
+      $('#nav_bar').removeClass('navbar-fixed');
+        
+    }
+  });
+});</script>
+		
+        <h1 class="overlay_text" style="letter-spacing: 1px;" id="page_title">Developers and Helpers</h1>
+    </section>
+
+
+  <section class="section" id="about">
+    <h1 class="title_text">Developers</h1>
+	  <hr>
+	  <img src="images/developers/TB.png" width="150" align="left" style="margin-right:20px;">
+	  <strong class="eventtext" align="left">Trevor Boyce</strong>
+	  <p class="eventtext" align="justify">Project Lead, Lead Designer, and Lead Programmer. Trevor designed the first versions of this website pretty much from the ground up. He used some bits of code online but the vast majority of this website is a result of his original design. Trevor is part of both FTC and FRC.</p>
+	  <hr>
+	  <img src="images/developers/SS.png" width="150" align="left" style="margin-right:20px;">
+	  <strong class="eventtext" align="left">Sully Stuerhmann</strong>
+	  <p class="eventtext" align="justify">Programmer and Tester. Sully joined the project a month or two after the very beginnings. He is a part of creating html and some css but does not work with javascript or jquery. Sully is part of FRC and is a student mentor for FTC.</p>
+	  <hr>
+	  <img src="images/developers/MW.jpeg" width="150" align="left" style="margin-right:20px;">
+	  <strong class="eventtext" align="left">Madi Wyatt</strong>
+	  <p class="eventtext" align="justify">Lead Tester. Madi is the lead tester for the website. She looks through the website to find bugs, errors, and gives feedback about the design. Madi is part of FRC.</p>
+	  <br>
+	  <br>
+	  <hr>
+    <ul></ul>
+  </section>
+  </footer>
+	
+	
+	<div id="includedFooter"></div>
+	
+	
+    </div>
+</body>
+</html>

@@ -10,7 +10,6 @@
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.2/jquery.min.js"></script>
 <script src="https://cdn.jsdelivr.net/jquery.stellar/0.6.2/jquery.stellar.min.js"></script>
 <script src="//cdn.rawgit.com/namuol/cheet.js/master/cheet.min.js" type="text/javascript"></script>
-<!--<script src="w3data.js"></script> -->
 <!--
 <script src="//cdnjs.cloudflare.com/ajax/libs/gsap/1.14.2/TweenMax.min.js"></script>
 <script src="//cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.5/ScrollMagic.min.js"></script>
@@ -45,7 +44,7 @@
 <body>
 	
 	<!-- Feedback form link -->
-	<div class="feedback"><p id="ft">Please fill out this feedback form: <a id="fl" href="http://goo.gl/forms/ZjkhSWaanaQNhhH32">http://goo.gl/forms/ZjkhSWaanaQNhhH32</a>. It would be a huge help.</p><strong id="fx" onclick="$('#ft').css({'display': 'none'});$('#fl').css({'display': 'none'});$('#fx').css({'display': 'none'});">X</strong></div>
+	<div class="feedback" id="fd"><p id="ft">Please fill out this feedback form: <a id="fl" href="http://goo.gl/forms/ZjkhSWaanaQNhhH32">http://goo.gl/forms/ZjkhSWaanaQNhhH32</a>. It would be a huge help.</p><strong id="fx" onclick="$('#ft').css({'display': 'none'});$('#fl').css({'display': 'none'});$('#fx').css({'display': 'none'});$('#fd').css({'display': 'none'})">X</strong></div>
 	<!-- remove before releasing -->
 	
 <div class="container">
@@ -54,9 +53,6 @@
 		<!-- jquery include -->
 		<div id="includedHeader"></div>
 		
-        <!-- w3 include 
-		<div w3-include-html="header.html"></div>
-		<script>w3IncludeHTML();</script> -->
 		<script>
             $(document).ready(function() {
 
@@ -76,11 +72,13 @@
         <h1 class="overlay_text" id="main_page_title">Downingtown Area Robotics</h1>
         <div class="overlay_description" id="social-media">
 			<img class="social-media-img" src="images/Social Media/Social Media.png" onmouseover="this.src='images/Social Media/Social Media Under ph.png'" onmouseout="this.src='images/Social Media/Social Media.png'">
-				<div class="social-media-links"><p>doishgiugf</p></div>
-            <!--<a target="_blank" href="https://www.instagram.com/frc1640/"><img src="images/instagram.png" height="100" id="media-img" alt="Instagram"></a>
-            <a target="_blank" href="https://twitter.com/FRC1640"><img src="images/twitter.png" height="100" id="media-img" alt="Twitter"></a>
-            <a target="_blank" href="https://www.facebook.com/firstteam1640/"><img src="images/facebook.png" height="100" id="media-img" alt="Facebook"></a>
-            <a target="_blank" href="https://www.youtube.com/user/FRC1640"><img src="images/youtube.png" height="100" id="media-img" alt="YouTube"></a>-->
+				<div class="social-media-links"><p>placeholder</p></div>
+            <!--https://www.instagram.com/frc1640/
+			
+			https://twitter.com/FRC1640	
+			https://www.facebook.com/firstteam1640/
+			https://www.youtube.com/user/FRC1640
+			-->
         </div>
     </section>
 
@@ -128,18 +126,12 @@
     <h2 class="overlay_text">FTC 7314</h2>
   </section>
      <section class="section" id="about">
-         <p class="section_text" align="justify">FRC Team 1640 was founded with 12 students in 2005 by Downingtown East High School physics teacher Paul Sabatino. Prior to joining the Downingtown East faculty, Mr. Sabatino mentored FRC Team 104 in the West Chester School District.</p>
-         <p class="section_text" align="justify">The team's name is Sab-BOT-age, in honor of Paul Sabatino's vital contributions.</p>
-         <p class="section_text" align="justify">The FRC 1640 team now encompasses thirty five students from throughout Chester County and more than a dozen mentors. While the organization has expanded its scope to include a FIRST Tech Challenge team and hosts two FIRST LEGO League events annually, FRC 1640 remains solidly the core of Downingtown Area Robotic (DAR).</p>
+		 <p class="section_text" align="justify">Before the 2013 Block Party season, FTC Team 7314 Sab-BOT-age was founded to give 7th and 8th graders an opportunity to participate in FIRST and robotics.</p>
+         <p class="section_text" align="justify">FTC has quickly expanded in many areas including outreach, team size, performance, and more! This past season saw almost 15 students make it to the FIRST World Championship in St. Louis, Missouri. 7314 was the only Pennsylvania team to do so! FTC has joined and helped FRC 1640 in a number of outreach events including demos, scrimmages, and the Sab-BOT-age hosted FLL events.</p>
     </section>
 	
 	<!-- jquery include -->
 	<div id="includedFooter"></div>
-	
-	<!-- w3 include
-	<div w3-include-html="footer.html"></div>
-		<script>w3IncludeHTML();</script>
-	-->
 	
     </div>
 </body>

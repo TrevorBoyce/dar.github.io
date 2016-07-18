@@ -2,7 +2,8 @@
 /* Body */
 body {
 	font-family: 'Muli', arial;
-	background-color: #FFFF6E;
+	background-image: url(../images/bg.png);
+	background-repeat: repeat;
 	margin-top: 0px;
 	margin-right: 0px;
 	margin-bottom: 0px;
@@ -16,6 +17,10 @@ body {
 Remove this before releasing!!!
 Remove this before releasing!!! */
 .feedback {
+	padding-top: 17px;
+	padding-bottom: 16px;
+	padding-right: 48px;
+	background-color: #FFFF6E;
 	text-align: center;
 	display: inline;
 	vertical-align: middle;
@@ -127,7 +132,7 @@ ul li img {
 .dropbtn {
     background-color: transparent;
     padding-top: 15px;
-    padding-bottom: 16px;
+    padding-bottom: 15px;
     padding-right: 10px; 
     padding-left: 10px;
     transition: all 0.3s linear;
@@ -141,12 +146,12 @@ ul li img {
     transition: all 0.3s linear;
 }
 
-/* Dropdown Content (Hidden by Default) */
+/* Dropdown Content */
 .dropdown-content {
     display: none;
     position: absolute;
     background-color: #4D7CFF;
-    top: 250%;
+    top: 230%;
     right: -30%;
     min-width: 160px;
     box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
@@ -292,6 +297,9 @@ text-shadow:
 }
 #gallery_slideshow {
     
+}
+#credits_parallax {
+	background-image: url(../images/CreditsImg.png);
 }
 .overlay_text {
     position: relative;
@@ -466,7 +474,6 @@ footer {
 	border-top-width: 2px;
 }
 .footer_banner {
-	background-image: url(../images/bg.png);
 	padding-top: 60px;
 	padding-bottom: 60PX;
 	margin-bottom: 0px;
