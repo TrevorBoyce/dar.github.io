@@ -13,35 +13,6 @@ body {
     /* cursor: url(../images/CursorShadow.png) 2 1, default; */
 }
 
-/* Remove this before releasing!!!!!!
-Remove this before releasing!!!
-Remove this before releasing!!! */
-.feedback {
-	padding-top: 17px;
-	padding-bottom: 16px;
-	padding-right: 48px;
-	background-color: #FFFF6E;
-	text-align: center;
-	display: inline;
-	vertical-align: middle;
-}
-.feedback p {
-	display: inline-block;
-	padding-left: 50px;
-	text-align: center;
-	width: 80%;
-	white-space: nowrap;
-}
-.feedback strong {
-	display: inline-block;
-	padding-left: 100px;
-	vertical-align: middle;
-	text-align: right;
-}
-/*Remove this before releasing!!!
-Remove this before releasing!!!
-Remove this before releasing!!! */
-
 /* Container */
 .container {
 	width: 100%;
