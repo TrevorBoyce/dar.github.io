@@ -336,8 +336,8 @@ text-shadow:
 }
 #main_page_title {
     position: absolute;
-    top: 50%;
-    transform: translateY(-50%);
+    top: 45%;
+    transform: translateY(-55%);
 }
 #page_title {
     position: absolute;
