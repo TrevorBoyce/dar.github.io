@@ -1,0 +1,78 @@
+<!doctype html>
+<html lang="en-US">
+<head>
+<meta charset="UTF-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="icon" href="favicon.png" type="image/png" sizes="64x64">
+<title>Sab-BOT-age</title>
+<link href='https://fonts.googleapis.com/css?family=Muli' rel='stylesheet' type='text/css'>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.2/jquery.min.js"></script>
+<script src="https://cdn.jsdelivr.net/jquery.stellar/0.6.2/jquery.stellar.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/slidesjs/3.0/jquery.slides.min.js"></script>
+<script>
+		$(function(){
+			$.stellar({
+				horizontalScrolling: false,
+				verticalOffset: 40
+			});
+		});
+</script>
+<!-- jquery include -->
+		<script>
+    	$(function(){
+      		$("#includedHeader").load("header.html");
+    	});
+		</script>
+		<script>
+    	$(function(){
+      		$("#includedFooter").load("footer.html");
+    	});
+		</script>
+<link href="css/Style.css" rel="stylesheet" type="text/css">
+</head>
+<body>
+
+
+<div class="container">
+    <section class="parallax" id="frcteam_parallax" data-stellar-background-ratio=".5" height="40%">
+
+
+		<div id="includedHeader"></div>
+
+		<script>
+            $(document).ready(function() {
+
+                $(window).scroll(function () {
+      console.log($(window).scrollTop())
+    if ($(window).scrollTop() > 0) {
+      $('#nav_bar').addClass('navbar-fixed');
+        $('list_border').addClass('nav-spacer');
+    }
+    if ($(window).scrollTop() < 1) {
+      $('#nav_bar').removeClass('navbar-fixed');
+
+    }
+  });
+});</script>
+
+        <h1 class="overlay_text" style="letter-spacing: 1px;" id="page_title">FAQ</h1>
+    </section>
+
+
+  <section class="section" id="about">
+    <h1 class="title_text">About FRC Team 1640</h1>
+      <p class="section_text">FRC Team 1640 was founded with 12 students in 2005 by Downingtown East High School physics teacher Paul Sabatino. Prior to joining the Downingtown East faculty, Mr. Sabatino mentored FRC Team 104 in the West Chester School District.</p>
+	  <p class="section_text">The team's name is Sab-BOT-age, in honor of Paul Sabatino's vital contributions.</p>
+	  <p class="section_text">In 2011, the team had to leave the aegis of the Downingtown Area School District and formed Downingtown Area Robotics, Inc. (DAR). The FRC 1640 team now encompasses thirty five students from throughout Chester County and more than a dozen mentors. While the organization has expanded its scope to include a FIRST Tech Challenge team and hosts two FIRST LEGO League events annually, FRC 1640 remains solidly the core of DAR.</p>
+	  <p class="section_text">FRC 1640 competes within the FIRST Mid-Atlantic (previously Mid-Atlantic Robotics) District.</p>
+  </section>
+  </footer>
+
+
+	<div id="includedFooter"></div>
+
+
+    </div>
+</body>
+</html>

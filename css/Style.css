@@ -289,6 +289,10 @@ text-shadow:
 	background-image: url(../images/SocialImg.jpeg);
 	height: 70%;
 }
+#frcteam_parallax {
+	background-image: url(../images/frcTeamImg.jpg);
+	height: 70%;
+}
 .overlay_text {
     position: relative;
     width: 100%;
