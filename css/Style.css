@@ -269,11 +269,11 @@ text-shadow:
 	background-repeat: repeat-y;
 }
 #home_parallax1 {
-    background-image: url(../images/Page1_Img1.png);
+    background-image: url(../images/Page1_Img1.jpg);
     height: 80%;
 }
 #home_parallax2 {
-    background-image: url(../images/Page1_Img2.png);
+    background-image: url(../images/Page1_Img2.jpg);
 }
 #home_parallax3 {
     background-image: url(../images/Page1_Img3.png);
@@ -286,7 +286,7 @@ text-shadow:
 	height: 70%;
 }
 #social_parallax {
-	background-image: url(../images/SocialImg.jpeg);
+	background-image: url(../images/SocialImg.jpg);
 	height: 70%;
 }
 #frcteam_parallax {
