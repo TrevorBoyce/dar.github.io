@@ -330,7 +330,7 @@ text-shadow:
     0 0 6px darkblue;
 }
 #social-media {
-	font-weight: 10000000;
+	font-weight: 900;
     position: absolute;
 	top: 55%;
     transform: translateY(-45%);
