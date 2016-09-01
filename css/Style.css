@@ -325,12 +325,12 @@ text-shadow:
 	transform: translateY(-48%);
     text-align: center;
 	width: 100%;
-	font-weight: 10000000;
 	line-height: 23px;
 	text-shadow:
     0 0 6px darkblue;
 }
 #social-media {
+	font-weight: 10000000;
     position: absolute;
 	top: 55%;
     transform: translateY(-45%);
