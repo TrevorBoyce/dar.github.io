@@ -325,7 +325,7 @@ text-shadow:
 	transform: translateY(-48%);
     text-align: center;
 	width: 100%;
-	/*font-weight: lighter;*/
+	font-weight: 10000000;
 	line-height: 23px;
 	text-shadow:
     0 0 6px darkblue;
