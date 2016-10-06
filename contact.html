@@ -1,0 +1,75 @@
+<!doctype html>
+<html lang="en-US">
+<head>
+<meta charset="UTF-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="icon" href="favicon.png" type="image/png" sizes="64x64">
+<title>Sab-BOT-age</title>
+<link href='https://fonts.googleapis.com/css?family=Muli' rel='stylesheet' type='text/css'>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.2/jquery.min.js"></script>
+<script src="https://cdn.jsdelivr.net/jquery.stellar/0.6.2/jquery.stellar.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/slidesjs/3.0/jquery.slides.min.js"></script>
+<script>
+		$(function(){
+			$.stellar({
+				horizontalScrolling: false,
+				verticalOffset: 40
+			});
+		});
+</script>
+<!-- jquery include -->
+		<script>
+    	$(function(){
+      		$("#includedHeader").load("header.html");
+    	});
+		</script>
+		<script>
+    	$(function(){
+      		$("#includedFooter").load("footer.html");
+    	});
+		</script>
+<link href="css/Style.css" rel="stylesheet" type="text/css">
+</head>
+<body>
+
+
+<div class="container">
+    <section class="parallax" id="home_parallax1" data-stellar-background-ratio=".5" height="40%">
+
+
+		<div id="includedHeader"></div>
+
+		<script>
+            $(document).ready(function() {
+
+                $(window).scroll(function () {
+      console.log($(window).scrollTop())
+    if ($(window).scrollTop() > 0) {
+      $('#nav_bar').addClass('navbar-fixed');
+        $('list_border').addClass('nav-spacer');
+    }
+    if ($(window).scrollTop() < 1) {
+      $('#nav_bar').removeClass('navbar-fixed');
+
+    }
+  });
+});</script>
+
+        <h1 class="overlay_text" style="letter-spacing: 1px;" id="page_title">How To Join</h1>
+    </section>
+
+
+  <section class="section" id="about">
+    <h1 class="title_text">Contact Information</h1>
+      <p class="section_text"><a href="http://team1640.com/wiki/images/2/28/2015_Downingtown_Area_Robotics_Student_Contact_Form.pdf">Contact Information Form</a><br><a href="http://team1640.com/wiki/images/7/7a/2015_Medical_Information_Form_Downingtown_Area_Robotics.pdf">Medical Information Form</a><br><a href="http://team1640.com/wiki/images/c/c0/2015_Student_Information_Release_Form_Downingtown_Area_Robotics.pdf">Student Information Release Form</a><br><a href="http://team1640.com/wiki/images/b/b5/2015_FRC_Student_Team_Permission_Form_Downingtown_Area_Robotics.pdf">Team Permission Form</a> </p>
+  </section>
+  </footer>
+
+
+	<div id="includedFooter"></div>
+
+
+    </div>
+</body>
+</html>
