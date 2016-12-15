@@ -59,6 +59,28 @@
  <h1 class="overlay_text" style="letter-spacing: 1px;" id="page_title">Frequently Asked Questions</h1>
     </section>
 	<h1 class="title_text">Frequently Asked Questions</h1>
+    <script>
+        // Expand Panel
+        $(".open").click(function(){
+            $(".content").slideDown("fast", function() {
+                $(".content").animate({"height": "+=5px", }, "fast");
+                $(".content").animate({"height": "-=5px", }, "fast");
+            });
+            $(".open").hide();
+            $(".close").show();
+        });
+
+
+        // Collapse Panel
+        $(".close").click(function(){
+            $(".content").animate({"height": "+=10px", }, "fast");
+            $(".content").slideUp("fast", function() {
+                $(".content").animate({"height": "-=10px", }, "fast");
+                $(".close").hide();
+                $(".open").show();
+            });
+        });
+    </script>
 <div class="panel">
 <div class="toggle">
     <div class="open">
