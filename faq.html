@@ -10,6 +10,7 @@
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.2/jquery.min.js"></script>
 <script src="https://cdn.jsdelivr.net/jquery.stellar/0.6.2/jquery.stellar.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/slidesjs/3.0/jquery.slides.min.js"></script>
+<script src="jQueryRotate.js"></script>
 <script>
 		$(function(){
 			$.stellar({
@@ -58,42 +59,10 @@
 
  <h1 class="overlay_text" style="letter-spacing: 1px;" id="page_title">Frequently Asked Questions</h1>
     </section>
+    <section class="section" id="about">
 	<h1 class="title_text">Frequently Asked Questions</h1>
-    <script>
-        // Expand Panel
-        $(".open").click(function(){
-            $(".content").slideDown("fast", function() {
-                $(".content").animate({"height": "+=5px", }, "fast");
-                $(".content").animate({"height": "-=5px", }, "fast");
-            });
-            $(".open").hide();
-            $(".close").show();
-        });
-
-
-        // Collapse Panel
-        $(".close").click(function(){
-            $(".content").animate({"height": "+=10px", }, "fast");
-            $(".content").slideUp("fast", function() {
-                $(".content").animate({"height": "-=10px", }, "fast");
-                $(".close").hide();
-                $(".open").show();
-            });
-        });
-    </script>
-<div class="panel">
-<div class="toggle">
-    <div class="open">
-        <img src="http://www.abload.de/img/plus6jcm3.png" alt="">
-        <a href="#">Open Spoiler</a>
-    </div>
-    <div class="close" style="display:none;">
-        <img src="http://www.abload.de/img/minuswfdlk.png" alt="">
-        <a href="#">Close Spoiler</a>
-    </div>
-
-    <div class="content" style="display:none;">
-		 <hr>
+        <div class="spoiler-button" onclick="document.getElementById('slider').classList.toggle('closed'); $('#faqspoiler1').rotate(45);"><hr><img src="images/X.png" height=40px id="faqspoiler1"><h2>When do we meet?</h2><hr></div>
+        <div class="slider" id="slider">
       <h3 class="title_text">Where &amp; when do you meet?</h3>
 		<p class="section_text"><strong>CCIU TCHS Brandywine Campus, 443 Boot Road, Downingtown PA.</strong> We have a metal/wood shop and field set-up area in our warehouse space and a full robotics classroom supplied by Chester County Intermediate Unit (CCIU) Technical College High School Brandywine Campus. We share the building with our 7th grade thru high school FTC Team 7314. Check out our Calendar for specific meeting times. Generally, we meet every Wednesday of "Off Season" April-December (plus a few Saturday competitions) and virtually every day during "Build Season" January-February. March-April is competition season (2 or 3-day events, Thursday-Sunday), so meetings vary somewhere between Off Season and Build Season. We meet at other times as needed--or as we want to! We have an annual pool party, Pancake Breakfast, and other fun, not-necessarily-robotics events.</p>
 	<hr>
@@ -108,9 +77,9 @@ Age - 7th Grade through High School
     The FIRST Robotics Competition (FRC) is for high school students. FIRST Technical Challenge (FTC) is designed for students in grades 7-12. We welcome home schooled and alternative education students not strictly classified by grade or school level.
 Gender - Everyone Welcome
     Males and females are encourage to participate and any and every aspect of the team. We are a co-ed team with both genders very involved in all fields and equally represented in leadership. Girls have always been involved in the technical (and non-technical) side of our team: 8 of our 13 team captains have been girls, our Pit Captains (think NASCAR pits) have been 50-50, 2 sub-teams (programming and game play) are headed by female mentors who help co-lead the design team. We DO NOT abide by sexism or harassment, which are grounds for immediate expulsion.</p>
-  </section>
-  </footer></div>
-</div>
+    </div>
+            </section>
+  </footer>
 
 
 	<div id="includedFooter"></div>
