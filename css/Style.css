@@ -345,7 +345,7 @@ text-shadow:
 	transition-timing-function: cubic-bezier(0, 1, 0.5, 1);
 }
 .slider.closed {
-	max-height: 500px;
+	max-height: 2500px;
 }
 .spoiler-button:hover {
     cursor: pointer;
