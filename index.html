@@ -11,6 +11,7 @@
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.2/jquery.min.js"></script>
 <script src="https://cdn.jsdelivr.net/jquery.stellar/0.6.2/jquery.stellar.min.js"></script>
 <script src="//cdn.rawgit.com/namuol/cheet.js/master/cheet.min.js" type="text/javascript"></script>
+<script src="jQueryRotate.js"></script>
 <!--
 <script src="//cdnjs.cloudflare.com/ajax/libs/gsap/1.14.2/TweenMax.min.js"></script>
 <script src="//cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.5/ScrollMagic.min.js"></script>
@@ -68,7 +69,9 @@
         
     }
   });
-});</script>
+});
+        var ts1; ts1=0;
+        </script>
 		
         <h1 class="overlay_text" id="main_page_title">Downingtown Area Robotics</h1>
         <a class="overlay_description" href="socialmedia.html">
@@ -85,12 +88,14 @@
 
 
   <section class="section" id="about">
-    <h1 class="title_text">About</h1>
-    <p class="section_text" align="justify">Now that competition season is over, FRC and FTC are currently on off-season schedules. This allows time to focus on things such as projects, learning, and outreach.</p>
-	<p class="section_text" align="justify">FRC Team 1640 had a good 2015-2016 season. With DEWBOT XII, the team ended up 3rd seed and finalist at Seneca as well as 3rd seed and champion at Westtown, the first FRC event 1640 has co-hosted with team 1391 Metal Moose. The team made it to eliminations at both MAR and the FIRST World Championship. Throughout the season, 1640 earned three engineering awards.</p>
-	<p class="section_text" align="justify">FTC Team 7314 had a phenomenal 2015-2016 season, winning the South Central PA Qualifying Tournament. This meant the team made it past qualifiers for the first time. Team 7314 was also champion at the PA Championship. The team did well in the East Super-Regional Championship Tournament. 7314 went on to do well as the only PA FTC team at the FIRST World Championship. The team also received two engineering awards during the season and were finalists at the Eastern Pennsylvania Qualifying tournament.</p>
-	<p class="section_text" align="center"><strong>Contact us at <a href="mailto:FRC1640@gmail.com" target="_top" class="text_standout">FRC1640@gmail.com</a> - FRC 1640 is currently meeting Wednesday evenings 6:00-9:00pm; FTC 7314 is meeting Mondays 6:30-8:30pm; all at the CCIU TCHS Brandywine Campus, 443 Boot Road, Downingtown PA.</strong></p>
+    <div class="spoiler-button" onclick="document.getElementById('slider1').classList.toggle('closed');if(ts1<1){$('#spoiler1').rotate({animateTo:90}); ts1=1;}else{$('#spoiler1').rotate({animateTo:0}); ts1=0;}"><hr><img src="images/arrow.png" height=60px id="spoiler1" align="left" style="margin-right:15px; margin-top:20px;"><h1 class="title_text" align="center">About</h1><hr></div>
+    <div class="slider" id="slider1">
+        <p class="section_text" align="justify">Now that competition season is over, FRC and FTC are currently on off-season schedules. This allows time to focus on things such as projects, learning, and outreach.</p>
+        <p class="section_text" align="justify">FRC Team 1640 had a good 2015-2016 season. With DEWBOT XII, the team ended up 3rd seed and finalist at Seneca as well as 3rd seed and champion at Westtown, the first FRC event 1640 has co-hosted with team 1391 Metal Moose. The team made it to eliminations at both MAR and the FIRST World Championship. Throughout the season, 1640 earned three engineering awards.</p>
+        <p class="section_text" align="justify">FTC Team 7314 had a phenomenal 2015-2016 season, winning the South Central PA Qualifying Tournament. This meant the team made it past qualifiers for the first time. Team 7314 was also champion at the PA Championship. The team did well in the East Super-Regional Championship Tournament. 7314 went on to do well as the only PA FTC team at the FIRST World Championship. The team also received two engineering awards during the season and were finalists at the Eastern Pennsylvania Qualifying tournament.</p>
+        <p class="section_text" align="center"><strong>Contact us at <a href="mailto:FRC1640@gmail.com" target="_top" class="text_standout">FRC1640@gmail.com</a> - FRC 1640 is currently meeting Wednesday evenings 6:00-9:00pm; FTC 7314 is meeting Mondays 6:30-8:30pm; all at the CCIU TCHS Brandywine Campus, 443 Boot Road, Downingtown PA.</strong></p>
       	<p class="section_text" align="center"><strong><a href="team1640.com" target="_top" class="text_standout">Find more information on the team wiki!</a></strong></p>
+      </div>
       <article class="sponsors">
       <hr><h1>Sponsors</h1><hr>
         <img src="images/sponsors/Boeing.svg" alt="Boeing" class="cards"/>
