@@ -344,7 +344,7 @@ text-shadow:
 	transition-duration: .5s;
 	transition-timing-function: cubic-bezier(0, 1, 0.5, 1);
 }
-.slider.closed {
+.slider.open {
 	max-height: 2500px;
 }
 .spoiler-button:hover {
