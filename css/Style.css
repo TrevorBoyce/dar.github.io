@@ -99,6 +99,13 @@ ul li:hover a {
 ul li img {
     position: relative;
 }
+/* Noscript warning */
+#noscript {
+    top: 60%;
+    font-size: 40px;
+    line-height: 70px;
+
+}
 /* Dropdown Button */
 .dropbtn {
     background-color: transparent;
@@ -305,14 +312,6 @@ text-shadow:
 	margin-top: 0px;
     text-shadow:
     0 0 10px darkblue;  
-}
-
-/* Noscript warning */
-#noscript {
-    top: 60%;
-    font-size: 40px;
-    line-height: 70px;
-
 }
 #main_page_title {
     position: absolute;
