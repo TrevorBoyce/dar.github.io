@@ -484,7 +484,7 @@ footer {
 	display: none;
 }
 
-
+if (/mobile/i.test(navigator.userAgent)) {...}
 
 
 
