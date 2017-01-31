@@ -3,6 +3,7 @@
 body {
 	font-family: 'Muli', arial;
 	background-image: url(../images/bg.png);
+    background-size: 150px;
 	background-repeat: repeat;
 	margin-top: 0px;
 	margin-right: 0px;
@@ -451,6 +452,7 @@ footer {
 	text-transform: uppercase;
 	font-weight: bold;
 	letter-spacing: 2px;
+    background-color: rgba(255, 255, 255, 0.35);
 	border: 3px solid #FFFFFF;
 	color: #FFFFFF;
 	transition: all 0.3s linear;
