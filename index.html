@@ -12,6 +12,7 @@
 <script src="https://cdn.jsdelivr.net/jquery.stellar/0.6.2/jquery.stellar.min.js"></script>
 <script src="//cdn.rawgit.com/namuol/cheet.js/master/cheet.min.js" type="text/javascript"></script>
 <script src="jQueryRotate.js"></script>
+<script src="jquery.spoiler.min.js"></script>
 <!--
 <script src="//cdnjs.cloudflare.com/ajax/libs/gsap/1.14.2/TweenMax.min.js"></script>
 <script src="//cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.5/ScrollMagic.min.js"></script>
@@ -20,7 +21,9 @@
 		$(function(){
 			$.stellar({
 				horizontalScrolling: false,
-				verticalOffset: 40
+				verticalOffset: 300,
+                hideDistantElements: true,
+                responsive: true
 			});
 		});
 </script>
@@ -71,6 +74,8 @@
   });
 });
         var ts1; ts1=0;
+        var ps1; ps1=0;
+        var ps2; ps2=0;
         </script>
 		
         <h1 class="overlay_text" id="main_page_title">Downingtown Area Robotics</h1>
@@ -88,8 +93,8 @@
 
 
   <section class="section" id="about">
-    <div class="spoiler-button" onclick="document.getElementById('slider1').classList.toggle('open');if(ts1<1){$('#spoiler1').rotate({animateTo:90}); ts1=1;}else{$('#spoiler1').rotate({animateTo:0}); ts1=0;}"><hr><img src="images/arrow.png" height=60px id="spoiler1" align="left" style="margin-right:15px; margin-top:20px;"><h1 class="title_text" align="center">About</h1><hr></div>
-    <div class="slider" id="slider1">
+      <!-- <div class="spoiler-button" onclick="document.getElementById('slider1').classList.toggle('open');if(ts1<1){$('#spoiler1').rotate({animateTo:90}); ts1=1;}else{$('#spoiler1').rotate({animateTo:0}); ts1=0;}">--><button class="spoiler-button" onclick="if(ts1<1){$('#spoiler1').rotate({animateTo:90}); ts1=1;}else{$('#spoiler1').rotate({animateTo:0}); ts1=0;}"><div class="spoiler" data-spoiler-link="1"><hr><img src="images/arrow.png" height=60px id="spoiler1" align="left" style="margin-right:15px; margin-top:20px;"><h1 class="title_text" align="center">About</h1><hr></div></button>
+    <div class="spoiler-content" data-spoiler-link="1">
         <p class="section_text" align="center">Now that competition season is over, FRC and FTC are currently on off-season schedules. This allows time to focus on things such as projects, learning, and outreach.</p>
         <p class="section_text" align="center">FRC Team 1640 had a good 2015-2016 season. With DEWBOT XII, the team ended up 3rd seed and finalist at Seneca as well as 3rd seed and champion at Westtown, the first FRC event 1640 has co-hosted with team 1391 Metal Moose. The team made it to eliminations at both MAR and the FIRST World Championship. Throughout the season, 1640 earned three engineering awards.</p>
         <p class="section_text" align="center">FTC Team 7314 had a phenomenal 2015-2016 season, winning the South Central PA Qualifying Tournament. This meant the team made it past qualifiers for the first time. Team 7314 was also champion at the PA Championship. The team did well in the East Super-Regional Championship Tournament. 7314 went on to do well as the only PA FTC team at the FIRST World Championship. The team also received two engineering awards during the season and were finalists at the Eastern Pennsylvania Qualifying tournament.</p>
@@ -121,26 +126,30 @@
 
   <!-- FRC -->
   <section class="parallax" data-stellar-background-ratio=".5" id="home_parallax2">
-    <h2 class="overlay_text">FRC 1640</h2>
+      <button class="spoiler-button" id="overlay-button" onclick="if(ps1<1){document.getElementById('home_parallax2').setAttribute('style', 'height : 60%'); ps1=1;}else{document.getElementById('home_parallax2').setAttribute('style', 'height : 20%'); ps1=0;}"><div class="spoiler" id="overlay-div" data-spoiler-link="2"><h2 class="overlay_text">FRC 1640</h2></div></button>
   </section>
+    <div class="spoiler-content" data-spoiler-link="2">
      <section class="section" id="about">
          <p class="section_text" align="justify">FRC Team 1640 was founded with 12 students in 2005 by Downingtown East High School physics teacher Paul Sabatino. Prior to joining the Downingtown East faculty, Mr. Sabatino mentored FRC Team 104 in the West Chester School District.</p>
          <p class="section_text" align="justify">The team's name is Sab-BOT-age, in honor of Paul Sabatino's vital contributions.</p>
          <p class="section_text" align="justify">The FRC 1640 team now encompasses thirty five students from throughout Chester County and more than a dozen mentors. While the organization has expanded its scope to include a FIRST Tech Challenge team and hosts two FIRST LEGO League events annually, FRC 1640 remains solidly the core of Downingtown Area Robotic (DAR).</p>
-    </section>
+         </div></section>
 
 
 
     <!-- FTC -->
     <section class="parallax" data-stellar-background-ratio=".5" id="home_parallax3">
-    <h2 class="overlay_text">FTC 7314</h2>
+        <button class="spoiler-button" id="overlay-button" onclick="if(ps2<1){document.getElementById('home_parallax3').setAttribute('style', 'height : 60%'); ps2=1;}else{document.getElementById('home_parallax3').setAttribute('style', 'height : 20%'); ps2=0;}"><div class="spoiler" id="overlay-div" data-spoiler-link="3"><h2 class="overlay_text">FTC 7314</h2></div></button>
   </section>
+    <div class="spoiler-content" data-spoiler-link="3">
      <section class="section" id="about">
 		 <p class="section_text" align="justify">Before the 2013 Block Party season, FTC Team 7314 Sab-BOT-age was founded to give 7th and 8th graders an opportunity to participate in FIRST and robotics.</p>
          <p class="section_text" align="justify">FTC has quickly expanded in many areas including outreach, team size, performance, and more! This past season saw almost 15 students make it to the FIRST World Championship in St. Louis, Missouri. 7314 was the only Pennsylvania team to do so! FTC has joined and helped FRC 1640 in a number of outreach events including demos, scrimmages, and the Sab-BOT-age hosted FLL events.</p>
-    </section>
+        </section></div>
 	
 	<!-- jquery include -->
+
+    <script>$(".spoiler").spoiler();</script>
 	<div id="includedFooter"></div>
 	
     </div>
