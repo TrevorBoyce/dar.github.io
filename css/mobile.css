@@ -1,2 +1,16 @@
 @charset "UTF-8";
 /* Body */
+body {
+	font-family: 'Muli', arial;
+	background-image: url(../images/bg.png);
+    background-size: 150px;
+	background-repeat: repeat;
+    background-attachment: fixed;
+	margin-top: 0px;
+	margin-right: 0px;
+	margin-bottom: 0px;
+	margin-left: 0px;
+	font-style: normal;
+	font-weight: 200;
+    /* cursor: url(../images/CursorShadow.png) 2 1, default; */
+}
