@@ -303,17 +303,14 @@ text-shadow:
 	height: 70%;
 }
 .overlay_text {
-    position: relative;
+    position: inherit;
     width: 100%;
 	font-size: 70px;
 	color: #FFFF6E;
     text-align: center;
 	top: 50%;
-    transform: translateY(-50%);
 	letter-spacing: 2px;
-	margin-top: 0px;
-    text-shadow:
-    0 0 10px darkblue;  
+    text-shadow: 0 0 10px darkblue;
 }
 #overlay-button {
     position: relative;
@@ -363,7 +360,8 @@ text-shadow:
     transform: translateY(-45%);
 }
 /* Spoiler CSS */
-.spoiler-content{
+.spoiler{
+    display: none;
     transition-property: all;
 	transition-duration: .5s;
 	transition-timing-function: cubic-bezier(0, 1, 0.5, 1);
