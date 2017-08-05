@@ -330,9 +330,10 @@ text-shadow:
 
 /* Noscript warning */
 #noscript {
-    top: 60%;
+    top: 30%;
     font-size: 40px;
     line-height: 70px;
+    background-color: #000000;
 
 }
 #main_page_title {
