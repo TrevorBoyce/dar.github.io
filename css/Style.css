@@ -101,11 +101,12 @@ ul li:hover a {
 ul li img {
     position: relative;
 }
+
 /* Dropdown Button */
 .dropbtn {
     background-color: transparent;
     padding-top: 15px;
-    padding-bottom: 15px;
+    padding-bottom: 17px;
     padding-right: 10px; 
     padding-left: 10px;
     transition: all 0.3s linear;
@@ -124,10 +125,14 @@ ul li img {
     display: none;
     position: absolute;
     background-color: #4D7CFF;
-    top: 230%;
+    top: 50px;
     right: -30%;
     min-width: 160px;
     box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    transition: all 0.3s linear;
+}
+#hdd {
+    right: -70%;
 }
 
 /* Links inside the dropdown */
@@ -303,7 +308,7 @@ text-shadow:
 	height: 70%;
 }
 .overlay_text {
-    position: inherit;
+    position: relative;
     width: 100%;
 	font-size: 70px;
 	color: #FFFF6E;
@@ -345,8 +350,8 @@ text-shadow:
 	color: #FFFF6E;
     position: absolute;
 	font-size: 150%;
-    top: 52%;
-	transform: translateY(-48%);
+    top: 60%;
+	transform: translateY(-40%);
     text-align: center;
 	width: 100%;
 	line-height: 23px;
