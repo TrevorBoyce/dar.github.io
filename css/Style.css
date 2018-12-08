@@ -200,19 +200,19 @@ ul li:hover a {
 #home_parallax1 {
     background-image: url(../images/Page1_Img1.jpg);
     width: 100%;
-    height: 80%;
+    height: 90%;
 }
 #home_parallax2 {
     background-image: url(../images/Page1_Img2.jpg);
-    height: 40%;
+    height: 50%;
 }
 #home_parallax3 {
     background-image: url(../images/Page1_Img3.jpg);
-    height: 40%;
+    height: 50%;
 }
 #home_parallax4 {
     background-image: url(../images/Page1_Img4.jpg);
-    height: 40%;
+    height: 50%;
 }
 
 /* Noscript warning */
@@ -239,75 +239,8 @@ footer {
 	background-color: #FFFFFF;
 	padding-bottom: 35px;
 }
-.sponsors {
-	width: 100%;
-	text-align: center;
-	padding-top: 30px;
-	float: left;
-}
-.sponsors h1 {
-	color: darkslategrey;
-	text-align: center;
-}
-.sponsors strong {
-	color: darkslategrey;
-    font-size: 110%;
-    line-height: 160%;
-}
-.cards {
-    text-align: center;
-    vertical-align: middle;
-    height: 75px;
-    margin: 10px;
-}
-.sponsors p {
-    color: #717070;
-	padding-left: 30px;
-	padding-right: 30px;
-	text-align: justify;
-	line-height: 25px;
-	font-weight: lighter;
-	margin-left: 20px;
-	margin-right: 20px;
-}
-.sponsors-page {
-	width: 100%;
-	text-align: center;
-	padding-top: 30px;
-	float: left;
-}
-.sponsors-page h1 {
-	color: #1943B5;
-	text-align: center;
-    font-size: 150%;
-}
-.sponsors-page strong {
-	color: black;
-    font-size: 120%;
-    line-height: 160%;
-}
-#sponsor-cards {
-    text-align: middle;
-    vertical-align: middle;
-    height: 125px;
-    margin: 10px;
-}
-.sponsors-page p {
-    color: #717070;
-	padding-left: 30px;
-	padding-right: 30px;
-	text-align: justify;
-	line-height: 25px;
-	font-weight: lighter;
-	margin-left: 20px;
-	margin-right: 20px;
-}
 .date {
 	color: darkgrey;
-}
-.eventtext {
-	text-align: justify;
-	font-size: 120%;
 }
 .button {
     text-decoration: none;
